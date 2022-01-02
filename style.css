@@ -16,8 +16,8 @@ body {
   border: 1px solid #ffffff;
   background-color: #ffffff;
   border-radius: 100%;
-  width: 700px;
-  height: 700px;
+  width: 500px;
+  height: 500px;
 }
 .blue {
   grid-area: blue-area;
@@ -40,6 +40,6 @@ body {
   background-color: green;
   border-top-left-radius: 100%;
 }
-.select {
-  opacity: 0.8;
+.selected {
+  opacity: 0.4;
 }
