@@ -51,7 +51,7 @@ let click = (color) =>{
     setTimeout(() =>{
         createColorElement(color).classList.remove('select');
         checkOrder();
-    })
+    },250);
 }
 
 // function create color
@@ -90,3 +90,14 @@ let playGame = () => {
 
 }
 
+/*green.addEventListener('click', click(0));
+red.addEventListener('click', click(1));
+yellow.addEventListener('click', click(2));
+blue.addEventListener('click', click(3));*/
+
+green.onclick = () => click(0);
+red.onclick = () => click(1);
+yellow.onclick = () => click(2);
+blue.onclick = () => click(3);
+
+playGame();
