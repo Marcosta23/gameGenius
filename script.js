@@ -44,3 +44,12 @@ let checkOrder = () =>{
     nextLevel();
     }
 }
+let click = (color) =>{
+    clickedOrder[clickedOrder.length]=color;
+    createColorElement(color).classList.add('select');
+
+    setTimeout(() =>{
+        createColorElement(color).classList.remove('select');
+    })
+    checkOrder();
+}
